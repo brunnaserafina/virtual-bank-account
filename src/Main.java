@@ -5,6 +5,7 @@ public class Main {
         String username = "Brunna Serafina";
         double bankBalance = 1599.99;
         String typeAccount = "Corrente";
+        int option = 0;
 
         String dataAccount = """
                  *******************************************
@@ -28,6 +29,34 @@ public class Main {
                 """;
 
         System.out.println(dataAccount);
+
+        Scanner reading = new Scanner(System.in);
+
+        while (option != 4) {
+            System.out.println(menu);
+            option = reading.nextInt();
+
+            if (option == 1) {
+                System.out.println("O saldo atualizado é de " + bankBalance);
+            } else if (option == 2) {
+                System.out.println("Informe o valor a receber: ");
+                double receivedValue = reading.nextDouble();
+                bankBalance += receivedValue;
+                System.out.println("Saldo atualizado R$ " + bankBalance);
+            } else if (option == 3) {
+                System.out.println("Informe o valor que deseja transferir: ");
+                double transferredValue = reading.nextDouble();
+                if (transferredValue > bankBalance) {
+                    System.out.println("Não há saldo para realizar a transferência!");
+                } else {
+                    bankBalance -= transferredValue;
+                    System.out.println("Saldo atualizado R$ " + bankBalance);
+                }
+            } else if (option != 4) {
+                System.out.println("Opção inválida!");
+            }
+        }
+
 
     }
 }
