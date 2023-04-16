@@ -16,6 +16,17 @@ public class Main {
                  *******************************************
                 """.formatted(username, typeAccount, bankBalance);
 
+        String menu = """
+                 Operações
+                 
+                 1- Consultar saldos
+                 2- Receber valor
+                 3- Transferir valor
+                 4- Sair   
+                 
+                 Digite a opção desejada: 
+                """;
+
         System.out.println(dataAccount);
 
     }
