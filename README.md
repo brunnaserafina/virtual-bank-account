@@ -4,7 +4,7 @@ Aplicação para controlar conta bancária, seja ela virtual ou não.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Titulo do meu projeto**
+| :sparkles: Nome        | **Conta Bancária**
 | :label: Tecnologias | Java
 | :fire: Desafio     | https://github.com/alura-cursos/2858-java-desafio
 
